@@ -1,0 +1,1175 @@
+
+
+/* Overall Container */
+.container {
+   /* Adjust overall width as needed */
+  margin: 20px auto; /* Center the container */
+  font-family: Arial, sans-serif; /* Set a default font */
+  color: #333; /* Set a default text color */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Banner Section */
+.banner-section {
+position: relative;
+text-align: left;
+padding: 30px;
+background-image: url("header.png");
+background-size: cover;
+background-position: center;
+color: white;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 600px;
+overflow: hidden;
+}
+
+/* Gradient Overlay for Banner */
+.banner-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(
+  135deg,
+  rgba(0, 0, 0, 0.6) 0%,
+  rgba(0, 0, 0, 0.2) 100%
+);
+border-radius: 10px;
+z-index: 1;
+}
+
+/* Left Side Content */
+.left-content {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Ensure padding is within the width */
+}
+
+.main-heading {
+font-family: Inconsolata;
+font-weight: 900;
+font-size: 64px;
+line-height: 1.2;
+letter-spacing: 3px;
+vertical-align: middle;
+margin-bottom: 10px;
+color: rgba(255, 255, 255, 1);
+}
+
+.sub-heading {
+font-family: Inconsolata;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+margin-bottom: 20px;
+}
+
+.view-link {
+font-family: Inconsolata;
+font-weight: 400;
+font-size: 18px;
+text-decoration: underline;
+text-decoration-style: solid;
+color:rgba(255, 255, 255, 1);
+
+text-decoration-thickness: 0.1em;
+transition: color 0.3s ease;
+z-index: 2;
+}
+
+.view-link:hover {
+color: #ffcc00;
+}
+
+/* Right Side Card */
+.right-card {
+position: relative;
+z-index: 2;
+background: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+width: 30%;
+min-width: 250px;
+box-sizing: border-box;
+}
+
+.card-title {
+font-size: 22px;
+font-weight: 800;
+margin-bottom: 10px;
+font-family: Inconsolata;
+color: rgba(0, 0, 0, 1);
+text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.date-time {
+font-size: 18px;
+color: rgba(126, 126, 126, 1);
+letter-spacing: 2px;
+margin-bottom: 50px;
+text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+vertical-align: middle;
+}
+
+.book-now {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: rgba(120, 72, 244, 1);
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+margin-bottom: 8px;
+transition: background-color 0.3s ease;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+padding: 15px 40px 15px 40px;
+
+}
+
+.book-now:hover {
+  background-color: rgba(120, 72, 244, 0.8);
+}
+
+.view-details {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: rgba(197, 197, 197, 1);
+color: white;
+border: none;
+border-radius: 5px;
+font-family: Inconsolata;
+font-size: 16px;
+margin-bottom: 50px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+padding: 15px 40px 15px 40px;
+
+}
+
+.view-details:hover {
+  background-color: rgba(197, 197, 197, 1);
+}
+
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Left Side */
+.left-side {
+  width: 60%;
+
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.back-link {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.back-link::before {
+  content: "←"; /* Unicode arrow */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.back-link:hover {
+  color: #007bff;
+}
+
+.location-heading {
+  font-size: 22px;
+  font-family: Inter;
+  letter-spacing: 2px; 
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6; /* Improve readability */
+}
+
+.visit-link {
+  display: inline-block; /* Changed to inline-block */
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 12px; /* Added padding for better appearance */
+  border-radius: 5px; /* Added border-radius for a modern look */
+  background-color: #f0f0f0; /* Added background color */
+}
+
+.visit-link:hover {
+  color: #007bff;
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.services-cards {
+  display: flex;
+  
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-color: #ddd;
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 70px;
+  height: 70px;
+}
+
+.icon-style {
+  font-size: 40px;
+  color: #007bff;
+  
+  width: 70px;
+  height: 70px;
+}
+
+.service-content {
+  flex: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.service-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Right Side */
+.right-side {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Make items stretch to fill the container */
+}
+
+.first-row {
+  margin-bottom: 15px;
+}
+
+.booking-card {
+ 
+  height: 144px; /* Set a fixed height */
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dce0e2;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensures padding & border do not increase the element's size */
+  margin-left: 200px;
+}
+
+
+.booking-card:hover {
+  
+  border-right: 5px solid blue;
+  border-bottom: 5px solid blue;
+  transform: translate(-2px, -2px);
+}
+
+.booking-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(27, 27, 37, 1);
+}
+
+.price span {
+  font-size: 24px;
+}
+
+
+
+.map {
+  width: 100%;
+  height: 250px; /* Adjust as needed */
+  border-radius: 8px;
+  background: url("map.png") no-repeat center;
+  background-size: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* New Section with Left and Right Parts */
+.new-section {
+  display: flex;
+  
+  gap: 20px;
+  padding: 20px;
+  
+  border-radius: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.left-part,
+.right-part {
+  width: 35%;
+  padding: 15px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.feature-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 12px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.feature-column {
+  width: 48%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.feature-column p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 16px;
+  gap: 15px;
+}
+
+.icon {
+  color: black;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Exclusive Offers Section */
+.exclusive-offers {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+ 
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.left-offers {
+  width: 50%;
+  padding: 15px;
+ 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.left-offers h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  margin-left: 2%;
+}
+
+.left-offers p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #555;
+  margin-left: 2%;
+}
+
+.left-offers h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #000;
+  margin-left: 2%;
+}
+
+/* Review Card Section */
+.review-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #f9f9f9;
+  margin: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 8px 16px 8px 16px;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.left-side {
+  flex: 1;
+  text-align: left;
+}
+
+/* Star Rating */
+.stars {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: rgb(161 124 124);
+}
+
+.star {
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.star.selected {
+  color: orange;
+}
+
+.stars-count {
+  font-size: 22px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Review Text */
+.review-text {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.submit-button {
+  background-color: rgb(248, 244, 244);
+  color: rgb(7, 2, 2);
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 16px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  /* Added properties for top, bottom, left, and right margins */
+  margin-top: 20px;  /* Example:  10px spacing above */
+  margin-bottom: 10px; /* Example: 10px spacing below */
+  margin-left: 15px;   /* Example: 15px spacing to the left */
+  margin-right: 15px;  /* Example: 15px spacing to the right */
+}
+
+.submit-button:hover {
+  background-color: #f5f1f1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.rating-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.rating-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 900px;
+  height: 500px;
+  margin-bottom: 20px; /* Spacing between cards */
+}
+
+.rating-left {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+.rating-right {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.rating-number {
+  font-size: 6rem;
+  font-weight: bold;
+  color: rgba(89, 101, 116, 1);
+  font-family: sans-serif;
+  margin-bottom: 0;
+  margin-right: 60%;
+}
+
+.rating-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #586477;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  margin-top: -70px; /* Add margin-top here, adjust the value as needed */
+}
+
+.give-review {
+  font-size: 18px;
+  font-weight: normal;
+  color: #586477;
+  font-family: sans-serif;
+}
+
+.overall-stars {
+  font-size: 4rem;
+  margin-top: 15px;
+  margin-left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overall-star {
+  font-size: inherit;
+  color: #ccc;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.overall-star.filled {
+  color: #f2c94c;
+}
+
+.rating-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.category-label {
+  color: #586477;
+  font-family: Rubik;
+  font-size: 24px;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.star {
+  font-size: 2.5rem;
+  color: #ccc;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.star.filled {
+  color: #f2c94c;
+}
+
+.review-button {
+  background-color: rgba(254, 199, 59, 1);
+  color: rgba(89, 101, 116, 1);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.2s;
+  font-family: sans-serif;
+  align-self: flex-start;
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
+.review-button:hover {
+  background-color: #e0b438;
+}
+
+.another-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+ 
+  text-align: left; /* Align text to the left for better readability */
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center; /* Vertically align image and name */
+  margin-bottom: 15px;
+}
+
+.profile-picture {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+.person-name {
+  margin: 0px 0; /* Add top and bottom margins for spacing */
+  padding: 5px 10px; /* Add some padding inside the element */
+  font-size: 40px; /* Set a larger font size */
+  font-family: Rubik; 
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text horizontally */
+  color: rgba(89, 101, 116, 1); /* Set a dark gray text color */
+  
+  
+  border-radius: 5px; /* Round the corners */
+  line-height: 1.2; /* Adjust line height for better readability */
+  letter-spacing: 1px; /* Add a little letter spacing */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+.card-text {
+  margin: 5px 10px 5px 50px; /* Add top/bottom margin, right margin and remove left */
+  padding: 5px; /* Add padding for internal space */
+  font-size: 17px;
+  color: rgba(89, 101, 116, 1);
+  font-family: Rubik, sans-serif; /* Use font-family instead of font-style for specifying the font */
+  line-height: 1.5; /* Add line height for better readability */
+  letter-spacing: 0.5px; /* Add letter spacing for better readability */
+}
+
+
+.review-section {
+  /* Optional: Add overall container styles here */
+  width: 100%; /*Ensures full width*/
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  text-align: left; /* Ensures text is left aligned*/
+  padding: 3%;
+}
+
+.review-header h2 {
+  margin: 0;
+  margin-right: 8px;
+  font-style: Rubik;
+  color: rgba(89, 101, 116, 1);
+  font-weight: 700;
+}
+
+.review-header span {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: rgba(89, 101, 116, 1);
+}
+
+.review-content {
+  /* Add styling for review content here */
+  text-align: left; /*Ensures review content is left aligned*/
+}
+
+
+
+.listing-section {
+  margin-bottom: 20px;
+  padding: 10px; /* Optional: Add padding inside the section */
+}
+
+.listing-heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: Outfit;
+}
+
+.view-now {
+  color: blue;
+  margin-left: 5px;
+}
+
+.venue-heading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-paragraph {
+  line-height: 1.6;
+}
+
+.faq-link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Optional: Add hover effect to the link */
+.faq-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Optional: Add a border to the section */
+.listing-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Optional: adjust heading font weight */
+.listing-heading, .venue-heading {
+  font-weight: 600;
+}
+
+
+
+.similar-listings-section {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.similar-listings-text {
+  margin-bottom: 10px;
+}
+
+.similar-listings-view-now {
+  color: rgba(92, 88, 255, 1);
+  cursor: pointer;
+}
+
+.similar-listings-heading {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: Inconsolata;
+  vertical-align: middle;
+  
+}
+
+.similar-listings-paragraph {
+  line-height: 1.6;
+  font-size: 16px;
+  font-style: Inconsolata;
+  color: rgba(126, 126, 126, 1);
+}
+
+.similar-listings-link {
+  color: rgba(92, 88, 255, 1);
+  text-decoration: none;
+}
+
+
+
+/* CSS (share-with-friends.css) */
+.share-container {
+  display: flex;
+  flex-direction: column;
+  /* Adjust margin for overall positioning */
+  margin-left: auto; /* Push to the right */
+  margin-right: 20px; /* Add some right margin */
+  width: fit-content; /* Container fits content */
+  font-size: 24px;
+  font-family: Inconsolata, monospace; /* Use Inconsolata or a fallback monospace font */
+  align-items: flex-end; /* Align content to the end (right) */
+}
+
+.share-container h1 {
+  margin-bottom: 20px; /* Add space between heading and icons */
+  text-align: right; /* Align heading text to the right */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* Align icons to the end (right) */
+  gap: 40px; /* Add space between icons */
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for hover effects */
+  opacity: 0.8; /* Slightly transparent by default */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  opacity: 1; /* Fully opaque on hover */
+}
+.product-rating-display {
+  font-size: 4rem;
+  margin-top: 15px;
+  margin-left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overall-star {
+  font-size: inherit;
+  color: #ccc;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.overall-star.filled {
+  color: #f2c94c;
+}
+
+.rating-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* One.css */
+.container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Increased Icon Size */
+.review-star {
+    cursor: pointer;
+    font-size: 1.5em; /* Increased from 1.2em */
+    color: darkgrey; /* Default light grey color */
+}
+
+/* Increased Font Size in Review Stars Container */
+.review-stars {
+  margin-top: 5px;
+  font-size: 2em; /* Added font-size for the container itself */
+}
+
+.review-star.active {
+  color: orange; /* Orange when clicked */
+}
+
+.review-stars {
+  display: inline-block; /* Ensure proper alignment */
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+
+  .container {
+      width: 95%;
+      margin: 10px auto;
+  }
+
+  .banner-section {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-heading {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+
+  .sub-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .right-card {
+    width: 100%;
+    min-width: auto;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .date-time {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .book-now,
+  .view-details {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .services-cards {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .new-section {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-part,
+  .right-part {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .feature-container {
+  flex-direction: row;
+  }
+
+  .feature-column {
+    width: 100%;
+  }
+
+  .exclusive-offers {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-offers,
+  .rating-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .left-offers h1 {
+    font-size: 22px;
+  }
+
+  .review-card {
+    flex-direction: column;
+  }
+  .rating-container {
+    flex-direction: column;
+  }
+
+  .rating-card {
+    flex-direction: column;
+    width: 90%; /* Take up most of the screen width */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .rating-left,
+  .rating-right {
+    width: 100%; /* Stack them on top of each other */
+    padding: 20px; /* Reduce padding for smaller screens */
+    border-right: none; /* Remove the border between the left and right sections */
+  }
+
+  .rating-number {
+    font-size: 4rem; /* Smaller font size for smaller screens */
+    margin-right: 0; /* Reset margin */
+  }
+
+  .rating-text {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .give-review {
+    font-size: 16px;
+  }
+
+  .overall-stars {
+    font-size: 3rem;
+  }
+
+  .category {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .category-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .stars {
+    margin-top: 5px;
+  }
+
+  .star {
+    font-size: 2rem;
+  }
+
+  .review-button {
+    margin-left: 0; /* Center the button */
+    align-self: center;
+    font-size: 1.2rem;
+  }
+}
+
+/* One.css */
+
+.advertisement-section {
+  margin-top: 20px;  /* Adjust spacing as needed */
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background color */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center; /* Center the content */
+
+  /* Height adjustments */
+  /* Minimum height of the section - increase this */
+  /* You can also use a fixed height, but min-height is usually better for flexibility */
+  /* height: 300px;  <-- This would be a fixed height */
+
+  /* To vertically center content if the height is significantly larger */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center;   /* Horizontally centers the content if needed */
+}
+
+.advertisement-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.advertisement-content img {
+  max-width: 100%; /* Make image responsive */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.advertisement-content p {
+  /* Adjust paragraph styling as needed */
+  margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+.advertisement-content a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.advertisement-content a:hover {
+  text-decoration: underline;
+}
+

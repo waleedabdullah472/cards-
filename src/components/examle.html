@@ -1,0 +1,158 @@
+<div className="rating-container">
+    <div className="overall-rating">
+        <div className="rating-number">{overallRating}</div>
+        <div className="rating-text">
+            Excellent
+            <div className="give-review">Give review</div>
+        </div>
+        <div className="overall-stars">
+            {renderOverallStars(overallRating)}
+        </div>
+    </div>
+    <div className="rating-categories">
+        <div className="category">
+            <div className="category-label">Agent rating</div>
+            <div className="stars">{renderStars('agent', agentRating)}</div>
+        </div>
+        <div className="category">
+            <div className="category-label">Landlord rating</div>
+            <div className="stars">{renderStars('landlord', landlordRating)}</div>
+        </div>
+        <div className="category">
+            <div className="category-label">Location rating</div>
+            <div className="stars">{renderStars('location', locationRating)}</div>
+        </div>
+        <button className="review-button">Write a review</button>
+    </div>
+</div>   
+
+
+
+
+
+
+/* Rating Container */
+.rating-container {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.overall-rating {
+  display: flex;
+  margin-bottom: 75%;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 50%;
+}
+
+.rating-number {
+  font-size: 7rem;
+  font-weight: bold;
+  color: rgba(89, 101, 116, 1);
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+
+.rating-text {
+  font-size: 35px;
+  font-weight: bold;
+  color: #586477;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+
+.give-review {
+  font-size: 20px;
+  font-weight: normal;
+  color: #586477;
+  font-family: sans-serif;
+}
+
+.overall-stars {
+  font-size: 4rem;
+  margin-top: 130px;
+  margin-left: -200px; /* Adjust the value as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overall-star {
+  font-size: inherit;
+  color: #ccc;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.overall-star.filled {
+  color: #f2c94c;
+}
+
+.rating-categories {
+  
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.category-label {
+  color: #586477;
+  font-family: Rubik;
+  font-size: 22px;
+}
+
+.stars {
+  display: flex;
+  gap: 1px;
+}
+
+.star {
+  font-size: 3rem;
+  color: #ccc;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  
+  
+  cursor: pointer;
+}
+
+.star.filled {
+  color: #f2c94c;
+}
+
+.review-button {
+  background-color: rgba(254, 199, 59, 1);
+  color: rgba(89, 101, 116, 1);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: background-color 0.2s;
+  font-family: sans-serif;
+  align-self: flex-start;
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-left: 150px;
+}
+
+.review-button:hover {
+  background-color: #e0b438;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Card</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="review-card">
+            <div class="header">
+                <div class="rating">
+                    <span class="score">5</span>
+                    <div class="info">
+                        <h3>Excellent</h3>
+                        <p>Give review</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ratings">
+                <div class="rating-item">
+                    <span>Agent rating</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="rating-item">
+                    <span>Landlord rating</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="rating-item">
+                    <span>Location rating</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="review-section">
+                <div class="stars">★★★★★</div>
+                <button class="review-btn">Write a review</button>
+            </div>
+
+            <div class="reviews">
+                <h3>Reviews (1 review)</h3>
+                <div class="review">
+                    <img src="https://storage.googleapis.com/a1aa/image/WZGc88AdYDKq4n8lOP8rRTho2wGYXnZ2rvkzkZ9DdbA.jpg" alt="User avatar">
+                    <div class="review-content">
+                        <h4>Robby J</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Nice 3 b/r home with cold/warm air con, plenty of parking space, nice backyard, school & Coles nearby.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="share">
+                <h3>Share with friends</h3>
+                <div class="social-icons">
+                    <a href="#" class="facebook">Facebook</a>
+                    <a href="#" class="whatsapp">WhatsApp</a>
+                    <a href="#" class="linkedin">LinkedIn</a>
+                    <a href="#" class="twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.review-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.score {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info p {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.ratings {
+    margin-bottom: 15px;
+}
+
+.rating-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.stars {
+    color: gold;
+    font-size: 18px;
+}
+
+.review-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.review-btn {
+    background-color: #fbc02d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reviews {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.review img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review h4 {
+    margin: 0;
+}
+
+.review p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.share {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+</style>
